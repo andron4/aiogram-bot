@@ -7,6 +7,8 @@ from handlers.routes import router
 load_dotenv()
 TOKEN = getenv("BOT_TOKEN")
 
+print("BOT_TOKEN exists:", TOKEN is not None)
+
 dp = Dispatcher()
 dp.include_router(router)
 
